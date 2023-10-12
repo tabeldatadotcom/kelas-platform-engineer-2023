@@ -11,7 +11,7 @@
 
     <groupId>com.maryanto.dimas.example</groupId>
     <artifactId>kelas-platform-engineer</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>v1</version>
     <name>kelas-platform-engineer</name>
     <description>Demo project for Spring Boot</description>
 
@@ -51,6 +51,7 @@
     </dependencies>
 
     <build>
+        <finalName>${project.artifactId}-${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
