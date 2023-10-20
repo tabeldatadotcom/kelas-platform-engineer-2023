@@ -1,0 +1,14 @@
+version: '3.9'
+volumes:
+  pg_data: {}
+services:
+  postgres:
+    image: postgres:15.1
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: product_service
+      POSTGRES_USER: product_service
+      POSTGRES_DB: product_service

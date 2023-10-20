@@ -1,0 +1,2 @@
+### Get all product in list
+GET localhost:8080/api/product/list
